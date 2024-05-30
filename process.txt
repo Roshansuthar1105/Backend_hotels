@@ -1,0 +1,38 @@
+command for nodemon : run shell as adminastator : Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+to install all the files 
+npm install express
+npm install nodemon 
+npm install lodash 
+etc
+lodash is having more than 100 of easy functions to deal with arrays and other things
+
+File system and operating system in node js
+
+import 
+const fs = require('fs')
+const os = require('os')
+var _ = require('lodash')
+
+we can also import other files like this 
+
+const var1 = require('file path');
+and we have to export something
+like this
+    module.exports = {
+        va1,
+        v2,
+        v3,
+        .
+        .
+        .
+    }
+
+
+eg
+{
+demo.js :=>
+
+    in main file 
+var demo = require('./demo');
+console.log(demo.add(1,2),demo.a,demo.sum)
+}

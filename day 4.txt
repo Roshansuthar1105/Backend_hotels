@@ -1,0 +1,77 @@
+const express = require("express");
+const app = express();
+const db = require("./db");
+const Person = require("./models/personSchema");
+const Menu = require("./models/MenuSchema");
+const bodyParser = require("body-parser");
+app.use(bodyParser.json());
+app.get("/", (req, res) => {
+  res.send("This is home page");
+});
+app.get("/app", (req, res) => {
+  res.send("This is app");
+});
+app.post("/person", async (req, res) => {
+  //old method
+  // const data = req.body;
+  // const newPerson = new Person(data);
+  // save the new person data
+  // newPerson.save((err,savedPerson){
+  //     if (err) {
+  //         console.log("Error during saving person ",err);
+  //         res.status(500).json({err:"internal server error"})
+  //     }else{
+  //         console.log("data incerted successfully")
+  //         res.status(200).json(savedPerson);
+  //     }
+  // })
+  //new method
+  try {
+    const data = req.body;
+    const newPerson = new Person(data);
+    const response = await newPerson.save();
+    console.log("data saved");
+    res.status(200).json(response);
+  } catch (err) {
+    console.log(err);
+    res.status(200).json({ err: "internal server error" });
+  }
+});
+
+app.get("/person", async function (req, res) {
+  try {
+    const data = await Person.find();
+    res.send(data);
+    console.log("data fatched");
+    res.status(200).json(data);
+  } catch (err) {
+    console.log(err);
+    res.status(200).json({ err: "internal server error" });
+  }
+});
+
+app.post("/menu", async (req, res) => {
+  try {
+    const data = req.body;
+    const newMenu = new Menu(data);
+    const resp = await newMenu.save();
+    res.status(200).json(resp);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json({ err: "internal server error" });
+  }
+});
+app.get("/menu", async (req, res) => {
+  try {
+    const data = await Menu.find();
+    res.send(data);
+    console.log("menu data fetched");
+    res.status(200).json(data);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json({ err: "internal server error" });
+  }
+});
+app.listen(3300, () => {
+  console.log("server is started at http//:localhost:3300");
+});

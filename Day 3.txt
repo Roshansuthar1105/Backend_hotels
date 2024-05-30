@@ -1,0 +1,8 @@
+json string to json object conversion is as following
+  let str = " {"name":"str1","age":22} "
+  jsononj = JSON.parse(str);
+
+
+json obj to string 
+
+  str = JSON.stringify(obj);
