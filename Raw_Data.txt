@@ -1,0 +1,155 @@
+/person
+
+[
+    {
+        "_id": "664f926c2d9fb4b1a69cdcf8",
+        "name": "demo name 2",
+        "age": 25,
+        "work": "manager",
+        "mobile": "123-456-789",
+        "email": "demo1@gmail.com",
+        "address": "jaipur",
+        "salary": 2500,
+        "__v": 0
+    },
+    {
+        "_id": "665209197db1e41dced641a6",
+        "name": "demo name 2",
+        "age": 24,
+        "work": "waiter",
+        "mobile": "123-456-789",
+        "email": "demow2@gmail.com",
+        "address": "udaipur",
+        "salary": 2800,
+        "__v": 0
+    },
+    {
+        "_id": "665209307db1e41dced641aa",
+        "name": "demo name 3",
+        "age": 28,
+        "work": "waiter",
+        "mobile": "123-456-789",
+        "email": "demow3@gmail.com",
+        "address": "udaipur",
+        "salary": 3400,
+        "__v": 0
+    }
+]
+
+
+/menu 
+
+
+[
+    {
+        "_id": "664f92b12d9fb4b1a69cdcfa",
+        "name": "demo dish",
+        "taste": "sweet",
+        "is_drink": false,
+        "price": 250,
+        "ingredients": [],
+        "num_sales": 0,
+        "__v": 0
+    },
+    {
+        "_id": "664f92c22d9fb4b1a69cdcfc",
+        "name": "demo dish 2",
+        "taste": "sour",
+        "is_drink": false,
+        "price": 25,
+        "ingredients": [],
+        "num_sales": 0,
+        "__v": 0
+    },
+    {
+        "_id": "66520af6bd09f04669884212",
+        "name": "sweet dish 1",
+        "taste": "sweet",
+        "is_drink": false,
+        "price": 200,
+        "ingredients": [
+            "maida",
+            "suger"
+        ],
+        "num_sales": 0,
+        "__v": 0
+    },
+    {
+        "_id": "66520b17bd09f04669884214",
+        "name": "sweet dish 2",
+        "taste": "sweet",
+        "is_drink": false,
+        "price": 210,
+        "ingredients": [
+            "maida",
+            "water"
+        ],
+        "num_sales": 0,
+        "__v": 0
+    },
+    {
+        "_id": "66520b20bd09f04669884216",
+        "name": "sweet dish 3",
+        "taste": "sweet",
+        "is_drink": false,
+        "price": 210,
+        "ingredients": [
+            "maida",
+            "water"
+        ],
+        "num_sales": 0,
+        "__v": 0
+    },
+    {
+        "_id": "66520b43bd09f04669884218",
+        "name": "sour dish 3",
+        "taste": "sour",
+        "is_drink": false,
+        "price": 225,
+        "ingredients": [
+            "in1",
+            "in2"
+        ],
+        "num_sales": 1,
+        "__v": 0
+    },
+    {
+        "_id": "66520b4ebd09f0466988421a",
+        "name": "sour dish 4",
+        "taste": "sour",
+        "is_drink": true,
+        "price": 225,
+        "ingredients": [
+            "in1",
+            "in2"
+        ],
+        "num_sales": 1,
+        "__v": 0
+    },
+    {
+        "_id": "66520b65bd09f0466988421c",
+        "name": "spicy dish 1",
+        "taste": "spicy",
+        "is_drink": true,
+        "price": 205,
+        "ingredients": [
+            "in1",
+            "in2"
+        ],
+        "num_sales": 1,
+        "__v": 0
+    },
+    {
+        "_id": "66520b72bd09f0466988421e",
+        "name": "spicy dish 2",
+        "taste": "spicy",
+        "is_drink": false,
+        "price": 205,
+        "ingredients": [
+            "in3",
+            "in4"
+        ],
+        "num_sales": 1,
+        "__v": 0
+    }
+]
